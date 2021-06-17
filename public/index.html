@@ -2,10 +2,56 @@
   <head>
     <title>Conspicous chat app</title>
     <script src="/socket.io/socket.io.js"></script>
+    <style>
+      .form {
+        margin: 0 auto;
+        padding: 2em;
+        max-width: 650px;
+      }
+      .blue-btn {
+        padding: 0.5em 2em;
+        color: white;
+        font-weight: bold;
+        background-color: rgb(20 40 120);
+      }
+      label {
+        margin: 1em;
+      }
+
+      input {
+        margin: 0.5em 1em;
+        width: 100%;
+      }
+
+      .flex {
+        display: flex;
+      }
+      #chatbox {
+        border-bottom: black solid 2px;
+        margin-bottom: 2em;
+        max-height: 450px;
+        height: 450px;
+        padding-top: 0;
+        overflow: auto;
+      }
+    </style>
   </head>
   <body>
-    <h1>Conspicous Chat</h1>
-    <button>click to chat!</button>
+    <div id="chatbox" class="form">
+      <h1>Conspicous Chat</h1>
+      <h1>chat here</h1>
+    </div>
+    <div class="form">
+      <div class="flex">
+        <label>Name</label>
+        <input type="text" name="name" id="" />
+      </div>
+      <div class="flex">
+        <label>Message</label>
+        <input type="text" name="message" id="" />
+      </div>
+      <input class="blue-btn" type="submit" value="Send" />
+    </div>
     <script src="/chat.js"></script>
   </body>
 </html>
