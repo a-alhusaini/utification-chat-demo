@@ -1,9 +1,15 @@
 let clientSocket = io.connect();
 
 clientSocket.on("chat", (data) => {
-  document.querySelector("#chatbox").innerHTML += data;
+  console.log(data);
+  document.querySelector(
+    "#chatbox"
+  ).innerHTML += `<strong>${data.name}</strong>: ${data.message}`;
 });
 
 document.querySelector(".blue-btn").addEventListener("click", () => {
-  clientSocket.emit("chat", { name: "anonymous", message: "hi" });
+  clientSocket.emit("chat", {
+    name: document.querySelector("#name").value,
+    message: document.querySelector("#message").value,
+  });
 });
