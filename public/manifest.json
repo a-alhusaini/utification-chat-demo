@@ -1,0 +1,15 @@
+{
+  "icons": [
+    {
+      "src": "https://www.amsterdamtourist.info/wp-content/uploads/2015/09/cropped-Favicon-144px-Viator.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+  "shortname": "chat",
+  "name": "chat",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "display": "minimal-ui",
+  "background_color": "#ffffff"
+}

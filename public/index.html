@@ -1,19 +1,23 @@
 <html>
   <head>
     <title>Conspicous chat app</title>
+    <link rel="manifest" href="/manifest.json" />
     <script src="/socket.io/socket.io.js"></script>
+    <script src="https://unpkg.com/utification-sdk/dist/client.umd.js"></script>
     <style>
       .form {
         margin: 0 auto;
         padding: 2em;
         max-width: 650px;
       }
+
       .blue-btn {
         padding: 0.5em 2em;
         color: white;
         font-weight: bold;
         background-color: rgb(20 40 120);
       }
+
       label {
         margin: 1em;
       }
@@ -51,6 +55,9 @@
         <input type="text" name="message" id="message" />
       </div>
       <input class="blue-btn" type="submit" value="Send" />
+      <button id="subscribe" class="blue-btn">
+        subscribe to notifications!
+      </button>
     </div>
     <script src="/chat.js"></script>
   </body>
