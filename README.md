@@ -1,6 +1,6 @@
 # Utification chat app demo
 
-This is a demo for Utification that sends a notification whenever someone sends you a chat message. It uses Express.js and socket.io
+This is a demo for [Utification](https://utification.appdevland.tech) that sends a notification whenever someone sends you a chat message. It uses Express.js and socket.io
 
 # How it works
 
@@ -34,9 +34,11 @@ self.addEventListener("push", (event) => {
 
 ## Manifest json
 
+LOCATION: public/manifest.json
+
 You need a manifest json file in order for a service worker to function
 
-## clientside javascript
+## Clientside javascript
 
 LOCATION: public/chat.js
 
@@ -56,7 +58,7 @@ document.querySelector("#subscribe").addEventListener("click", async () => {
 
 </pre>
 
-## server
+## Server
 
 LOCATION: index.js
 
@@ -88,7 +90,7 @@ io.on("connection", (socket) => {
 
 # Running the project locally
 
-First you will need to change the values in `public/chat.js` and `index.js` to your own credentials which you can get from the utification dashboard.
+First you will need to change the values in `public/chat.js` and `index.js` to your own credentials which you can get from the [utification dashboard](https://utification.appdevland.tech).
 
 After that it's just like any nodejs project
 
@@ -97,6 +99,6 @@ npm install
 node index.js
 </pre>
 
-# support Utification on patreon
+# support Utification on [patreon](https://patreon.com/appdevland)
 
-This project is compeltely free and relies on donations. If you want to support it then donate to our patreon!
+This project is compeltely free and relies on donations. If you want to support it then donate to our [patreon](https://patreon.com/appdevland)!
