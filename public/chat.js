@@ -14,7 +14,7 @@ clientSocket.on("chat", (data) => {
   console.log(data);
   document.querySelector(
     "#chatbox"
-  ).innerHTML += `<strong>${data.name}</strong>: ${data.message}`;
+  ).innerHTML += `<div><strong>${data.name}</strong>: ${data.message}</div>`;
 });
 
 document.querySelector(".blue-btn").addEventListener("click", () => {
