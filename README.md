@@ -1,3 +1,5 @@
+![Utification Logo](https://utification.appdevland.tech/logo.png "Utification logo")
+
 # Utification chat app demo
 
 This is a demo for [Utification](https://utification.appdevland.tech) that sends a notification whenever someone sends you a chat message. It uses Express.js and socket.io
